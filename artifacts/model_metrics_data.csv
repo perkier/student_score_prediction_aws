@@ -1,0 +1,37 @@
+Model,Best Parameters,Train R2 Score,Test R2 Score,Model_Instance
+Gradient Boosting,"{'learning_rate': 0.1, 'n_estimators': 64, 'subsample': 0.6}",0.8938906623165075,0.8799222977993122,"GradientBoostingRegressor(alpha=0.9, ccp_alpha=0.0, criterion='friedman_mse',
+                          init=None, learning_rate=0.1, loss='ls', max_depth=3,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=64,
+                          n_iter_no_change=None, presort='deprecated',
+                          random_state=None, subsample=0.6, tol=0.0001,
+                          validation_fraction=0.1, verbose=0, warm_start=False)"
+CatBoosting Regressor,"{'depth': 6, 'iterations': 100, 'learning_rate': 0.1}",0.9071223853509314,0.8613734525258083,<catboost.core.CatBoostRegressor object at 0x00000270576D55E0>
+Random Forest,{'n_estimators': 256},0.9774470120712517,0.853546130106893,"RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='auto', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=256, n_jobs=None, oob_score=False,
+                      random_state=None, verbose=0, warm_start=False)"
+XGBRegressor,"{'learning_rate': 0.05, 'n_estimators': 64}",0.9287495013467192,0.8492434722253639,"XGBRegressor(base_score=None, booster=None, callbacks=None,
+             colsample_bylevel=None, colsample_bynode=None,
+             colsample_bytree=None, device=None, early_stopping_rounds=None,
+             enable_categorical=False, eval_metric=None, feature_types=None,
+             gamma=None, grow_policy=None, importance_type=None,
+             interaction_constraints=None, learning_rate=0.05, max_bin=None,
+             max_cat_threshold=None, max_cat_to_onehot=None,
+             max_delta_step=None, max_depth=None, max_leaves=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             multi_strategy=None, n_estimators=64, n_jobs=None,
+             num_parallel_tree=None, objective='reg:squarederror', ...)"
+AdaBoost Regressor,"{'learning_rate': 0.5, 'n_estimators': 128}",0.8474974228840934,0.8456156852672313,"AdaBoostRegressor(base_estimator=None, learning_rate=0.5, loss='linear',
+                  n_estimators=128, random_state=None)"
+Decision Tree,{'criterion': 'mse'},0.9996534669718089,0.7384917464732241,"DecisionTreeRegressor(ccp_alpha=0.0, criterion='mse', max_depth=None,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort='deprecated',
+                      random_state=None, splitter='best')"
