@@ -18,8 +18,8 @@ class PredictPipeline:
             # Get the directory of the current script
             script_dir = os.path.dirname(os.path.abspath(__file__))
 
-            model_path_relative = os.path.join('..','..', 'components', 'artifacts', 'model.pkl')
-            preprocessor_path_relative = os.path.join('..','..',  'components', 'artifacts', 'proprocessor.pkl')
+            model_path_relative = os.path.join('..','..', 'artifacts', 'model.pkl')
+            preprocessor_path_relative = os.path.join('..','..',  'artifacts', 'proprocessor.pkl')
 
             # Get the absolute path using the relative path
             model_path = os.path.abspath(os.path.join(script_dir, model_path_relative))
