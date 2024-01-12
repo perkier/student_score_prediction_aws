@@ -47,7 +47,7 @@ class ModelTrainer:
                       "CatBoosting Regressor": CatBoostRegressor(verbose=False),
                       "AdaBoost Regressor": AdaBoostRegressor()}
 
-            params = { "Decision Tree": {'criterion': ['mse', 'friedman_mse', 'mae']},
+            params = { "Decision Tree": {'criterion': ['absolute_error', 'friedman_mse', 'squared_error']},
 
                        "Random Forest": {'n_estimators': [8, 16, 32, 64, 128, 256]},
 
